@@ -1,4 +1,4 @@
-export default (arr: any[], n: number) => {
+export const groupArrayElements = (arr: any[], n: number) => {
   if (n < 1) {
     throw new Error('The divider must be positive.');
   }

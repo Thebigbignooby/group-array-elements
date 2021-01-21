@@ -1,4 +1,4 @@
-import groupArrayElements from './index';
+import { groupArrayElements } from './index';
 
 describe('groupArrayElements(arr, n)', () => {
   test('should return an array of N equally sized arrays', () => {
