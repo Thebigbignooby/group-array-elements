@@ -14,13 +14,13 @@ This is for a technical test. Pushing it to Github and NPM was not a requirement
 ## Getting started
 
 ```sh
-npm install ????
+npm i group-array-elements
 ```
 
 ## How to use
 
 ```js
-import { groupArrayElements } from '????'
+import groupArrayElements from 'group-array-elements'
 
 groupArrayElements([1,2,3,4,5], 3)
 // returns [[1,2], [3,4], [5]]

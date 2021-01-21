@@ -1,10 +1,10 @@
-export const divideArray = (arr: any[], n: number) => {
+export default (arr: any[], n: number) => {
   if (n < 1) {
     throw new Error('The divider must be positive.');
   }
-  // if (n > arr.length) {
-  //   throw new Error('titi')
-  // }
+  if (n > arr.length) {
+    throw new Error('The divider must be smaller than the length of the array.')
+  }
 
   const k = Math.ceil(arr.length / n);
   const res = [];

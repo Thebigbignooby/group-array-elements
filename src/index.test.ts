@@ -1,11 +1,11 @@
-import { divideArray } from './index';
+import groupArrayElements from './index';
 
-describe('divideArray(arr, n)', () => {
+describe('groupArrayElements(arr, n)', () => {
   test('should return an array of N equally sized arrays', () => {
     const arr = [1, 2, 3];
     const n = 3;
     const expected = [[1], [2], [3]];
-    expect(divideArray(arr, n)).toEqual(expected);
+    expect(groupArrayElements(arr, n)).toEqual(expected);
   });
 
   describe('if the size of the original array cannot be divided equally by N', () => {
@@ -13,7 +13,7 @@ describe('divideArray(arr, n)', () => {
       const arr = [1, 2, 3, 4, 5];
       const n = 3;
       const expected = [[1, 2], [3, 4], [5]];
-      expect(divideArray(arr, n)).toEqual(expected);
+      expect(groupArrayElements(arr, n)).toEqual(expected);
     });
   });
 
@@ -23,7 +23,7 @@ describe('divideArray(arr, n)', () => {
       const n = 0;
       const expected = new Error('The divider must be positive.');
       expect(() => {
-        divideArray(arr, n);
+        groupArrayElements(arr, n);
       }).toThrow(expected);
     });
   });
@@ -31,9 +31,9 @@ describe('divideArray(arr, n)', () => {
     test('should throw an Error', () => {
       const arr = [1, 2, 3, 4, 5];
       const n = 7;
-      const expected = new Error('titi');
+      const expected = new Error('The divider must be smaller than the length of the array.');
       expect(() => {
-        divideArray(arr, n);
+        groupArrayElements(arr, n);
       }).toThrow(expected);
     });
   });
