@@ -1,6 +1,6 @@
 {
   "name": "group-array-elements",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "groups array elements",
   "type": "module",
   "main": "lib/index.js",
