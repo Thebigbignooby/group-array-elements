@@ -3,7 +3,7 @@ export default (arr: any[], n: number) => {
     throw new Error('The divider must be positive.');
   }
   if (n > arr.length) {
-    throw new Error('The divider must be smaller than the length of the array.')
+    throw new Error('The divider must be smaller than the length of the array.');
   }
 
   const k = Math.ceil(arr.length / n);
