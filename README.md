@@ -20,7 +20,7 @@ npm i group-array-elements
 ## How to use
 
 ```js
-import groupArrayElements from 'group-array-elements'
+import { groupArrayElements } from 'group-array-elements'
 
 groupArrayElements([1,2,3,4,5], 3)
 // returns [[1,2], [3,4], [5]]
