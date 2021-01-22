@@ -25,3 +25,21 @@ import groupArrayElements from 'group-array-elements'
 groupArrayElements([1,2,3,4,5], 3)
 // returns [[1,2], [3,4], [5]]
 ```
+
+## Contributing
+
+```sh
+git clone git@github.com:Thebigbignooby/group-array-elements.git
+```
+
+CD into the project.
+
+```sh
+npm i
+```
+
+and you're ready to go, try running some tests with:
+
+```sh
+npm run test
+```
